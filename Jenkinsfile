@@ -75,7 +75,7 @@ pipeline {
                         git add Deployment.yaml
                         git commit -m "Update image to ${IMAGE_TAG}" || true
 
-                        git push https://${GIT_USER}:${GIT_TOKEN}@https://github.com/basavarajgudageri07/java-springboot-application.git HEAD:main
+                        git push https://${GIT_USER}:${GIT_TOKEN}@github.com/basavarajgudageri07/java-springboot-application.git HEAD:main   
                 '''    
             }
         }
